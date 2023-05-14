@@ -5,6 +5,11 @@ const numbers = [1, 2, 3, 4, 5];
 // number is multiplied by 2 using the map method.
 // ============== Your answer here:
 
+
+const multipliedArray = numbers.map(number => number * 2);
+
+console.log(multipliedArray);
+
 // ==============
 
 // Q2)
@@ -13,6 +18,11 @@ const names = ["Alice", "Bob", "Charlie"];
 // write code to create a new array where each name is
 // converted to uppercase using the map method.
 // ============== Your answer here:
+
+
+const uppercaseArray = names.map(name => name.toUpperCase());
+
+console.log(uppercaseArray);
 
 // ==============
 
@@ -23,6 +33,10 @@ const numbers2 = [1, 4, 9, 16, 25];
 //  number is squared using the map method.
 // ============== Your answer here:
 
+const squaredArray = numbers2.map((number)=>Math.sqrt(number));
+
+console.log(squaredArray);
+
 // ==============
 
 // Q4)
@@ -32,6 +46,10 @@ const names2 = ["John", "Jane", "Tom"];
 // is appended with " Smith" using the map method.
 // ============== Your answer here:
 
+const appendedArray = names2.map(name => name + " Smith");
+
+console.log(appendedArray);
+
 // ==============
 
 // Q5)
@@ -40,7 +58,9 @@ const numbers3 = [2, 4, 6, 8, 10];
 //  write code to create a new array where each
 // number is divided by 2 using the map method.
 // ============== Your answer here:
+const dividedArray = numbers3.map(number => number / 2);
 
+console.log(dividedArray);
 // ==============
 
 // Q6)
@@ -49,5 +69,9 @@ const fruits = ["apple", "banana", "orange"];
 //  write code to create a new array where each fruit
 //  name is capitalized using the map method. Ex, Apple ...
 // ============== Your answer here:
+
+const capitalizedArray = fruits.map(fruit => fruit.charAt(0).toUpperCase() + fruit.slice(1));
+
+console.log(capitalizedArray);
 
 // ==============
